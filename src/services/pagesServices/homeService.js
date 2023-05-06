@@ -9,7 +9,6 @@ class HomeService extends BaseService{
     }
 
     getData(type,params){
-        console.log(`${this.apiEndPoint}/${type}`)
         return http.get(`${this.apiEndPoint}${type}`,{params})
      }
 }
